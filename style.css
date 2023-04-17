@@ -4,15 +4,31 @@
 }
 .todo_item{
     display: flex;
-    flex-direction: column;
-    background-color: chocolate;
+    flex-direction: row;
 }
-.myclass{
-
+.todo_item:nth-child(1n)
+{
+    background-color: #aedae5;
 }
-.name{
-
+.todo_item:nth-child(2n)
+{
+    background-color: #a6cde9;
+}
+.myclass:checked+.name{
+    text-decoration: line-through;
+}
+.todo_item:has(.myclass:checked)
+{
+    background-color: #e2e2e2;
 }
 .icon{
-
+    display: flex;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    color: darkred;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px;
 }
