@@ -1,0 +1,18 @@
+.todo_items{
+    display: flex;
+    flex-direction: column;
+}
+.todo_item{
+    display: flex;
+    flex-direction: column;
+    background-color: chocolate;
+}
+.myclass{
+
+}
+.name{
+
+}
+.icon{
+
+}
